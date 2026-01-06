@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,10 @@
     <title>Privacy Policy | Harvey (هارفي)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #E53935;
@@ -58,13 +62,20 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
             animation: pulse 15s ease-in-out infinite;
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
         }
 
         .header-content {
@@ -94,7 +105,7 @@
             display: inline-block;
             margin-top: 20px;
             padding: 8px 20px;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             border-radius: 50px;
             font-size: 0.9rem;
             backdrop-filter: blur(10px);
@@ -111,7 +122,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
         .tab-btn {
@@ -152,8 +163,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Cards */
@@ -162,14 +180,14 @@
             border-radius: 16px;
             padding: 30px;
             margin-bottom: 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
             border: 1px solid var(--border-color);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .card:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
         }
 
         h2 {
@@ -207,7 +225,8 @@
             margin-bottom: 15px;
         }
 
-        ul, ol {
+        ul,
+        ol {
             color: var(--text-secondary);
             margin: 15px 0;
             padding-left: 25px;
@@ -302,12 +321,12 @@
 
         .contact-card h2 {
             color: white;
-            border-bottom-color: rgba(255,255,255,0.3);
+            border-bottom-color: rgba(255, 255, 255, 0.3);
             justify-content: center;
         }
 
         .contact-card p {
-            color: rgba(255,255,255,0.9);
+            color: rgba(255, 255, 255, 0.9);
         }
 
         .contact-info {
@@ -412,11 +431,12 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <div class="header-content">
-            <div class="logo">🛒</div>
+            <div class="logo"><i class="fas fa-shopping-cart"></i></div>
             <h1>Privacy Policy</h1>
             <p>Harvey (هارفي) - Food Delivery App</p>
             <div class="last-updated">Last Updated: December 31, 2025</div>
@@ -425,8 +445,9 @@
 
     <!-- Language Tabs -->
     <nav class="language-tabs">
-        <button class="tab-btn active" onclick="switchLanguage('en')">🇬🇧 English</button>
-        <button class="tab-btn" onclick="switchLanguage('ar')">🇾🇪 العربية</button>
+        <button class="tab-btn active" onclick="switchLanguage('en')"><i class="fas fa-globe-americas"></i>
+            English</button>
+        <button class="tab-btn" onclick="switchLanguage('ar')"><i class="fas fa-language"></i> العربية</button>
     </nav>
 
     <!-- Main Content -->
@@ -435,10 +456,13 @@
         <div id="content-en" class="content-section active">
             <!-- Introduction -->
             <div class="card">
-                <h2><span class="icon">📋</span> Introduction</h2>
-                <p>Welcome to Harvey (هارفي) ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
-                <p>Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the application.</p>
-                
+                <h2><span class="icon"><i class="fas fa-clipboard-list"></i></span> Introduction</h2>
+                <p>Welcome to Harvey (هارفي) ("we," "our," or "us"). We are committed to protecting your personal
+                    information and your right to privacy. This Privacy Policy explains how we collect, use, disclose,
+                    and safeguard your information when you use our mobile application.</p>
+                <p>Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy,
+                    please do not access the application.</p>
+
                 <h3>Company Information</h3>
                 <ul>
                     <li><strong>Company Name:</strong> Enova Studio</li>
@@ -450,8 +474,8 @@
 
             <!-- Information We Collect -->
             <div class="card">
-                <h2><span class="icon">📊</span> Information We Collect</h2>
-                
+                <h2><span class="icon"><i class="fas fa-chart-bar"></i></span> Information We Collect</h2>
+
                 <h3>1. Personal Information You Provide</h3>
                 <p>We collect personal information that you voluntarily provide to us when you:</p>
                 <ul>
@@ -501,10 +525,12 @@
                 </div>
 
                 <h3>2. Payment Information</h3>
-                <p>We use third-party payment processors (Stripe, PayPal) to process payments. We do NOT store your complete credit card information on our servers.</p>
+                <p>We use third-party payment processors (Stripe, PayPal) to process payments. We do NOT store your
+                    complete credit card information on our servers.</p>
                 <ul>
                     <li><strong>What we store:</strong> Last 4 digits of card, card type, transaction IDs</li>
-                    <li><strong>What payment processors store:</strong> Full payment details (governed by their privacy policies)</li>
+                    <li><strong>What payment processors store:</strong> Full payment details (governed by their privacy
+                        policies)</li>
                 </ul>
 
                 <h3>3. Information Automatically Collected</h3>
@@ -548,9 +574,9 @@
 
             <!-- How We Use Your Information -->
             <div class="card">
-                <h2><span class="icon">⚙️</span> How We Use Your Information</h2>
+                <h2><span class="icon"><i class="fas fa-cog"></i></span> How We Use Your Information</h2>
                 <p>We use the information we collect to:</p>
-                
+
                 <h3>1. Provide Services</h3>
                 <ul>
                     <li>Process and fulfill your orders</li>
@@ -582,7 +608,7 @@
 
             <!-- Information Sharing -->
             <div class="card">
-                <h2><span class="icon">🔗</span> Information Sharing and Disclosure</h2>
+                <h2><span class="icon"><i class="fas fa-share-nodes"></i></span> Information Sharing and Disclosure</h2>
                 <p>We may share your information with:</p>
 
                 <h3>Service Providers</h3>
@@ -619,7 +645,7 @@
 
             <!-- Data Retention -->
             <div class="card">
-                <h2><span class="icon">🗄️</span> Data Retention</h2>
+                <h2><span class="icon"><i class="fas fa-database"></i></span> Data Retention</h2>
                 <p>We retain your personal information for as long as:</p>
                 <ul>
                     <li>Your account is active</li>
@@ -664,7 +690,7 @@
 
             <!-- Your Privacy Rights -->
             <div class="card">
-                <h2><span class="icon">🛡️</span> Your Privacy Rights</h2>
+                <h2><span class="icon"><i class="fas fa-shield-halved"></i></span> Your Privacy Rights</h2>
                 <p>You have the right to:</p>
 
                 <h3>1. Access Your Data</h3>
@@ -675,7 +701,7 @@
 
                 <h3>3. Delete Your Data</h3>
                 <p>Request deletion of your account and associated data.</p>
-                
+
                 <div class="info-box">
                     <strong>How to delete your account:</strong>
                     <ol>
@@ -684,7 +710,8 @@
                         <li>Tap "Delete Account" / "Close Account"</li>
                         <li>Confirm deletion</li>
                     </ol>
-                    <p>OR contact us at <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a> with subject "Account Deletion Request"</p>
+                    <p>OR contact us at <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a> with
+                        subject "Account Deletion Request"</p>
                 </div>
 
                 <h3>4. Withdraw Consent</h3>
@@ -693,12 +720,13 @@
                 <h3>5. Data Portability</h3>
                 <p>Request your data in a portable format.</p>
 
-                <p><strong>To exercise these rights, contact us at:</strong> <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a></p>
+                <p><strong>To exercise these rights, contact us at:</strong> <a
+                        href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a></p>
             </div>
 
             <!-- Data Security -->
             <div class="card">
-                <h2><span class="icon">🔒</span> Data Security</h2>
+                <h2><span class="icon"><i class="fas fa-lock"></i></span> Data Security</h2>
                 <p>We implement appropriate security measures including:</p>
                 <ul>
                     <li><strong>Encryption:</strong> Data encrypted in transit (TLS/SSL) and at rest</li>
@@ -707,27 +735,33 @@
                     <li><strong>Regular Audits:</strong> Security practices reviewed regularly</li>
                 </ul>
                 <div class="warning-box">
-                    <p>However, no method of transmission over the Internet is 100% secure. We cannot guarantee absolute security.</p>
+                    <p>However, no method of transmission over the Internet is 100% secure. We cannot guarantee absolute
+                        security.</p>
                 </div>
             </div>
 
             <!-- Children's Privacy -->
             <div class="card">
-                <h2><span class="icon">👶</span> Children's Privacy</h2>
-                <p>Our app is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
-                <p>If you believe we have collected information from a child under 13, please contact us immediately at <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a>.</p>
+                <h2><span class="icon"><i class="fas fa-child"></i></span> Children's Privacy</h2>
+                <p>Our app is not intended for children under 13 years of age. We do not knowingly collect personal
+                    information from children under 13.</p>
+                <p>If you believe we have collected information from a child under 13, please contact us immediately at
+                    <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a>.
+                </p>
             </div>
 
             <!-- International Data Transfers -->
             <div class="card">
-                <h2><span class="icon">🌍</span> International Data Transfers</h2>
-                <p>Your information may be transferred to and processed in countries other than your country of residence. These countries may have different data protection laws.</p>
-                <p>By using our app, you consent to the transfer of your information to Yemen and other countries where we operate.</p>
+                <h2><span class="icon"><i class="fas fa-earth-americas"></i></span> International Data Transfers</h2>
+                <p>Your information may be transferred to and processed in countries other than your country of
+                    residence. These countries may have different data protection laws.</p>
+                <p>By using our app, you consent to the transfer of your information to Yemen and other countries where
+                    we operate.</p>
             </div>
 
             <!-- Third-Party Services -->
             <div class="card">
-                <h2><span class="icon">🔌</span> Third-Party Services</h2>
+                <h2><span class="icon"><i class="fas fa-plug"></i></span> Third-Party Services</h2>
                 <p>Our app uses the following third-party services:</p>
                 <div class="table-wrapper">
                     <table>
@@ -742,7 +776,8 @@
                             <tr>
                                 <td>Firebase</td>
                                 <td>Authentication, Database</td>
-                                <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></td>
+                                <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy
+                                        Policy</a></td>
                             </tr>
                             <tr>
                                 <td>Stripe</td>
@@ -752,12 +787,14 @@
                             <tr>
                                 <td>PayPal</td>
                                 <td>Payments</td>
-                                <td><a href="https://www.paypal.com/privacy" target="_blank">PayPal Privacy Policy</a></td>
+                                <td><a href="https://www.paypal.com/privacy" target="_blank">PayPal Privacy Policy</a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Twilio</td>
                                 <td>WhatsApp OTP</td>
-                                <td><a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio Privacy Policy</a></td>
+                                <td><a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio Privacy
+                                        Policy</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -766,7 +803,7 @@
 
             <!-- Changes to Policy -->
             <div class="card">
-                <h2><span class="icon">📝</span> Changes to This Privacy Policy</h2>
+                <h2><span class="icon"><i class="fas fa-file-pen"></i></span> Changes to This Privacy Policy</h2>
                 <p>We may update this privacy policy from time to time. We will notify you of changes by:</p>
                 <ul>
                     <li>Posting the new policy in the app</li>
@@ -778,24 +815,25 @@
 
             <!-- Contact -->
             <div class="card contact-card">
-                <h2><span class="icon">📧</span> Contact Us</h2>
+                <h2><span class="icon"><i class="fas fa-envelope-open-text"></i></span> Contact Us</h2>
                 <p>If you have questions about this Privacy Policy, please contact us:</p>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <span class="icon">📧</span>
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
                         <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a>
                     </div>
                     <div class="contact-item">
-                        <span class="icon">📍</span>
+                        <span class="icon"><i class="fas fa-location-dot"></i></span>
                         <span>Sana'a, Yemen</span>
                     </div>
                 </div>
-                <p style="margin-top: 20px;">For data protection inquiries: <a href="mailto:privacy@enovastudio-ye.com">privacy@enovastudio-ye.com</a></p>
+                <p style="margin-top: 20px;">For data protection inquiries: <a
+                        href="mailto:privacy@enovastudio-ye.com">privacy@enovastudio-ye.com</a></p>
             </div>
 
             <!-- Consent -->
             <div class="card">
-                <h2><span class="icon">✅</span> Consent</h2>
+                <h2><span class="icon"><i class="fas fa-circle-check"></i></span> Consent</h2>
                 <p>By using Harvey (هارفي), you consent to:</p>
                 <ul>
                     <li>This Privacy Policy</li>
@@ -811,10 +849,12 @@
         <div id="content-ar" class="content-section arabic-text">
             <!-- Introduction -->
             <div class="card">
-                <h2><span class="icon">📋</span> مقدمة</h2>
-                <p>مرحبًا بك في تطبيق هارفي ("نحن" أو "لنا"). نحن ملتزمون بحماية معلوماتك الشخصية وحقك في الخصوصية. توضح سياسة الخصوصية هذه كيفية جمع واستخدام والإفصاح عن وحماية معلوماتك عند استخدام تطبيقنا.</p>
-                <p>يرجى قراءة سياسة الخصوصية هذه بعناية. إذا كنت لا توافق على شروط هذه السياسة، يرجى عدم استخدام التطبيق.</p>
-                
+                <h2><span class="icon"><i class="fas fa-clipboard-list"></i></span> مقدمة</h2>
+                <p>مرحبًا بك في تطبيق هارفي ("نحن" أو "لنا"). نحن ملتزمون بحماية معلوماتك الشخصية وحقك في الخصوصية. توضح
+                    سياسة الخصوصية هذه كيفية جمع واستخدام والإفصاح عن وحماية معلوماتك عند استخدام تطبيقنا.</p>
+                <p>يرجى قراءة سياسة الخصوصية هذه بعناية. إذا كنت لا توافق على شروط هذه السياسة، يرجى عدم استخدام
+                    التطبيق.</p>
+
                 <h3>معلومات الشركة</h3>
                 <ul>
                     <li><strong>اسم الشركة:</strong> إينوفا ستوديو (Enova Studio)</li>
@@ -826,8 +866,8 @@
 
             <!-- Information We Collect -->
             <div class="card">
-                <h2><span class="icon">📊</span> المعلومات التي نجمعها</h2>
-                
+                <h2><span class="icon"><i class="fas fa-chart-bar"></i></span> المعلومات التي نجمعها</h2>
+
                 <h3>1. المعلومات الشخصية التي تقدمها</h3>
                 <p>نجمع المعلومات الشخصية التي تقدمها لنا طوعياً عندما:</p>
                 <ul>
@@ -877,10 +917,12 @@
                 </div>
 
                 <h3>2. معلومات الدفع</h3>
-                <p>نستخدم معالجات دفع خارجية (Stripe، PayPal) لمعالجة المدفوعات. نحن لا نخزن معلومات بطاقتك الائتمانية الكاملة على خوادمنا.</p>
+                <p>نستخدم معالجات دفع خارجية (Stripe، PayPal) لمعالجة المدفوعات. نحن لا نخزن معلومات بطاقتك الائتمانية
+                    الكاملة على خوادمنا.</p>
                 <ul>
                     <li><strong>ما نخزنه:</strong> آخر 4 أرقام من البطاقة، نوع البطاقة، معرفات المعاملات</li>
-                    <li><strong>ما يخزنه معالجو الدفع:</strong> تفاصيل الدفع الكاملة (وفقاً لسياسات الخصوصية الخاصة بهم)</li>
+                    <li><strong>ما يخزنه معالجو الدفع:</strong> تفاصيل الدفع الكاملة (وفقاً لسياسات الخصوصية الخاصة بهم)
+                    </li>
                 </ul>
 
                 <h3>3. المعلومات المجمعة تلقائياً</h3>
@@ -924,9 +966,9 @@
 
             <!-- How We Use Your Information -->
             <div class="card">
-                <h2><span class="icon">⚙️</span> كيف نستخدم معلوماتك</h2>
+                <h2><span class="icon"><i class="fas fa-cog"></i></span> كيف نستخدم معلوماتك</h2>
                 <p>نستخدم المعلومات التي نجمعها من أجل:</p>
-                
+
                 <h3>1. تقديم الخدمات</h3>
                 <ul>
                     <li>معالجة وتنفيذ طلباتك</li>
@@ -958,7 +1000,7 @@
 
             <!-- Information Sharing -->
             <div class="card">
-                <h2><span class="icon">🔗</span> مشاركة المعلومات والإفصاح عنها</h2>
+                <h2><span class="icon"><i class="fas fa-share-nodes"></i></span> مشاركة المعلومات والإفصاح عنها</h2>
                 <p>قد نشارك معلوماتك مع:</p>
 
                 <h3>مقدمي الخدمات</h3>
@@ -995,7 +1037,7 @@
 
             <!-- Data Retention -->
             <div class="card">
-                <h2><span class="icon">🗄️</span> الاحتفاظ بالبيانات</h2>
+                <h2><span class="icon"><i class="fas fa-database"></i></span> الاحتفاظ بالبيانات</h2>
                 <p>نحتفظ بمعلوماتك الشخصية طالما:</p>
                 <ul>
                     <li>حسابك نشط</li>
@@ -1040,7 +1082,7 @@
 
             <!-- Your Privacy Rights -->
             <div class="card">
-                <h2><span class="icon">🛡️</span> حقوق الخصوصية الخاصة بك</h2>
+                <h2><span class="icon"><i class="fas fa-shield-halved"></i></span> حقوق الخصوصية الخاصة بك</h2>
                 <p>لديك الحق في:</p>
 
                 <h3>1. الوصول إلى بياناتك</h3>
@@ -1051,7 +1093,7 @@
 
                 <h3>3. حذف بياناتك</h3>
                 <p>طلب حذف حسابك والبيانات المرتبطة به.</p>
-                
+
                 <div class="info-box">
                     <strong>كيفية حذف حسابك:</strong>
                     <ol>
@@ -1060,7 +1102,8 @@
                         <li>اضغط على "حذف الحساب" / "إغلاق الحساب"</li>
                         <li>أكد الحذف</li>
                     </ol>
-                    <p>أو تواصل معنا على <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a> بعنوان "طلب حذف الحساب"</p>
+                    <p>أو تواصل معنا على <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a>
+                        بعنوان "طلب حذف الحساب"</p>
                 </div>
 
                 <h3>4. سحب الموافقة</h3>
@@ -1069,12 +1112,13 @@
                 <h3>5. نقل البيانات</h3>
                 <p>طلب بياناتك بتنسيق قابل للنقل.</p>
 
-                <p><strong>لممارسة هذه الحقوق، تواصل معنا على:</strong> <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a></p>
+                <p><strong>لممارسة هذه الحقوق، تواصل معنا على:</strong> <a
+                        href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a></p>
             </div>
 
             <!-- Data Security -->
             <div class="card">
-                <h2><span class="icon">🔒</span> أمان البيانات</h2>
+                <h2><span class="icon"><i class="fas fa-lock"></i></span> أمان البيانات</h2>
                 <p>نطبق إجراءات أمنية مناسبة تشمل:</p>
                 <ul>
                     <li><strong>التشفير:</strong> البيانات مشفرة أثناء النقل (TLS/SSL) وفي حالة الراحة</li>
@@ -1089,21 +1133,23 @@
 
             <!-- Children's Privacy -->
             <div class="card">
-                <h2><span class="icon">👶</span> خصوصية الأطفال</h2>
+                <h2><span class="icon"><i class="fas fa-child"></i></span> خصوصية الأطفال</h2>
                 <p>تطبيقنا غير مخصص للأطفال دون سن 13 عاماً. نحن لا نجمع عن علم معلومات شخصية من الأطفال دون سن 13.</p>
-                <p>إذا كنت تعتقد أننا جمعنا معلومات من طفل دون سن 13، يرجى التواصل معنا فوراً على <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a>.</p>
+                <p>إذا كنت تعتقد أننا جمعنا معلومات من طفل دون سن 13، يرجى التواصل معنا فوراً على <a
+                        href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a>.</p>
             </div>
 
             <!-- International Data Transfers -->
             <div class="card">
-                <h2><span class="icon">🌍</span> نقل البيانات الدولي</h2>
-                <p>قد يتم نقل معلوماتك ومعالجتها في بلدان أخرى غير بلد إقامتك. قد يكون لهذه البلدان قوانين حماية بيانات مختلفة.</p>
+                <h2><span class="icon"><i class="fas fa-earth-americas"></i></span> نقل البيانات الدولي</h2>
+                <p>قد يتم نقل معلوماتك ومعالجتها في بلدان أخرى غير بلد إقامتك. قد يكون لهذه البلدان قوانين حماية بيانات
+                    مختلفة.</p>
                 <p>باستخدام تطبيقنا، فإنك توافق على نقل معلوماتك إلى اليمن والبلدان الأخرى التي نعمل فيها.</p>
             </div>
 
             <!-- Third-Party Services -->
             <div class="card">
-                <h2><span class="icon">🔌</span> خدمات الطرف الثالث</h2>
+                <h2><span class="icon"><i class="fas fa-plug"></i></span> خدمات الطرف الثالث</h2>
                 <p>يستخدم تطبيقنا خدمات الطرف الثالث التالية:</p>
                 <div class="table-wrapper">
                     <table>
@@ -1118,7 +1164,8 @@
                             <tr>
                                 <td>Firebase</td>
                                 <td>المصادقة، قاعدة البيانات</td>
-                                <td><a href="https://policies.google.com/privacy" target="_blank">سياسة خصوصية جوجل</a></td>
+                                <td><a href="https://policies.google.com/privacy" target="_blank">سياسة خصوصية جوجل</a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Stripe</td>
@@ -1128,12 +1175,14 @@
                             <tr>
                                 <td>PayPal</td>
                                 <td>المدفوعات</td>
-                                <td><a href="https://www.paypal.com/privacy" target="_blank">سياسة خصوصية PayPal</a></td>
+                                <td><a href="https://www.paypal.com/privacy" target="_blank">سياسة خصوصية PayPal</a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Twilio</td>
                                 <td>التحقق عبر واتساب</td>
-                                <td><a href="https://www.twilio.com/legal/privacy" target="_blank">سياسة خصوصية Twilio</a></td>
+                                <td><a href="https://www.twilio.com/legal/privacy" target="_blank">سياسة خصوصية
+                                        Twilio</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1142,7 +1191,7 @@
 
             <!-- Changes to Policy -->
             <div class="card">
-                <h2><span class="icon">📝</span> التغييرات على سياسة الخصوصية هذه</h2>
+                <h2><span class="icon"><i class="fas fa-file-pen"></i></span> التغييرات على سياسة الخصوصية هذه</h2>
                 <p>قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سنقوم بإخطارك بالتغييرات عن طريق:</p>
                 <ul>
                     <li>نشر السياسة الجديدة في التطبيق</li>
@@ -1154,24 +1203,25 @@
 
             <!-- Contact -->
             <div class="card contact-card">
-                <h2><span class="icon">📧</span> تواصل معنا</h2>
+                <h2><span class="icon"><i class="fas fa-envelope-open-text"></i></span> تواصل معنا</h2>
                 <p>إذا كانت لديك أسئلة حول سياسة الخصوصية هذه، يرجى التواصل معنا:</p>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <span class="icon">📧</span>
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
                         <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a>
                     </div>
                     <div class="contact-item">
-                        <span class="icon">📍</span>
+                        <span class="icon"><i class="fas fa-location-dot"></i></span>
                         <span>صنعاء، اليمن</span>
                     </div>
                 </div>
-                <p style="margin-top: 20px;">لاستفسارات حماية البيانات: <a href="mailto:privacy@enovastudio-ye.com">privacy@enovastudio-ye.com</a></p>
+                <p style="margin-top: 20px;">لاستفسارات حماية البيانات: <a
+                        href="mailto:privacy@enovastudio-ye.com">privacy@enovastudio-ye.com</a></p>
             </div>
 
             <!-- Consent -->
             <div class="card">
-                <h2><span class="icon">✅</span> الموافقة</h2>
+                <h2><span class="icon"><i class="fas fa-circle-check"></i></span> الموافقة</h2>
                 <p>باستخدام تطبيق هارفي، فإنك توافق على:</p>
                 <ul>
                     <li>سياسة الخصوصية هذه</li>
@@ -1207,4 +1257,5 @@
         }
     </script>
 </body>
+
 </html>
