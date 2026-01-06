@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service for Harvey (هارفي) - E-commerce food delivery app by Enova Studio">
+    <meta name="keywords" content="Harvey, هارفي, terms of service, Enova Studio, Yemen">
+    <title>Terms of Service | Harvey (هارفي)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #E53935;
+            --primary-dark: #C62828;
+            --bg-color: #FAFAFA;
+            --card-bg: #FFFFFF;
+            --text-primary: #212121;
+            --text-secondary: #616161;
+            --border-color: #E0E0E0;
+            --accent-gradient: linear-gradient(135deg, #E53935 0%, #FF6F61 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .arabic-text {
+            font-family: 'Noto Kufi Arabic', 'Inter', sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+
+        /* Header */
+        .header {
+            background: var(--accent-gradient);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Language Tabs */
+        .language-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .tab-btn {
+            padding: 12px 30px;
+            border: 2px solid var(--primary-color);
+            background: transparent;
+            color: var(--primary-color);
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            background: rgba(229, 57, 53, 0.1);
+        }
+
+        .tab-btn.active {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Cards */
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2 .icon {
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 25px 0 15px;
+        }
+
+        h4 {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            color: var(--text-secondary);
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .arabic-text ul,
+        .arabic-text ol {
+            padding-left: 0;
+            padding-right: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+            border-left: 4px solid #1976D2;
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0;
+        }
+
+        .arabic-text .info-box {
+            border-left: none;
+            border-right: 4px solid #1976D2;
+            border-radius: 12px 0 0 12px;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+            border-left: 4px solid #F57C00;
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0;
+        }
+
+        .arabic-text .warning-box {
+            border-left: none;
+            border-right: 4px solid #F57C00;
+            border-radius: 12px 0 0 12px;
+        }
+
+        /* Contact Section */
+        .contact-card {
+            background: var(--accent-gradient);
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .contact-card h2 {
+            color: white;
+            border-bottom-color: rgba(255,255,255,0.3);
+            justify-content: center;
+        }
+
+        .contact-card p {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item .icon {
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #212121;
+            color: #9E9E9E;
+        }
+
+        .footer p {
+            color: #9E9E9E;
+            font-size: 0.9rem;
+        }
+
+        .footer .company-name {
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Links */
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        .contact-card a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .header {
+                padding: 40px 20px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .tab-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .language-tabs {
+                display: none;
+            }
+
+            .header {
+                background: #E53935 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"><i class="fas fa-file-contract"></i></div>
+            <h1>Terms of Service</h1>
+            <p>Harvey (هارفي) - Food Delivery App</p>
+            <div class="last-updated">Last Updated: December 31, 2025</div>
+        </div>
+    </header>
+
+    <!-- Language Tabs -->
+    <nav class="language-tabs">
+        <button class="tab-btn active" onclick="switchLanguage('en')"><i class="fas fa-globe"></i> English</button>
+        <button class="tab-btn" onclick="switchLanguage('ar')"><i class="fas fa-globe"></i> العربية</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- English Content -->
+        <div id="content-en" class="content-section active">
+            <!-- Agreement to Terms -->
+            <div class="card">
+                <h2><i class="fas fa-handshake icon"></i> 1. Agreement to Terms</h2>
+                <p>By accessing or using Harvey (هارفي) mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+                <p>These Terms constitute a legally binding agreement between you and Enova Studio ("Company," "we," "us," or "our").</p>
+            </div>
+
+            <!-- Description of Service -->
+            <div class="card">
+                <h2><i class="fas fa-info-circle icon"></i> 2. Description of Service</h2>
+                <p>Harvey (هارفي) is a mobile application that provides:</p>
+                <ul>
+                    <li>Food and product ordering services</li>
+                    <li>Delivery services</li>
+                    <li>Payment processing</li>
+                    <li>User account management</li>
+                    <li>Order tracking</li>
+                </ul>
+                <p>The App connects users with restaurant branches and delivery services operated by Enova Studio or its partners.</p>
+            </div>
+
+            <!-- Eligibility -->
+            <div class="card">
+                <h2><i class="fas fa-user-check icon"></i> 3. Eligibility</h2>
+                <p>To use our App, you must:</p>
+                <ul>
+                    <li>Be at least 18 years old, OR</li>
+                    <li>Be at least 13 years old with parental/guardian consent</li>
+                    <li>Have the legal capacity to enter into a binding agreement</li>
+                    <li>Not be prohibited from using the App under applicable laws</li>
+                </ul>
+                <p>By using the App, you represent and warrant that you meet these eligibility requirements.</p>
+            </div>
+
+            <!-- User Accounts -->
+            <div class="card">
+                <h2><i class="fas fa-user-circle icon"></i> 4. User Accounts</h2>
+                
+                <h3>4.1 Account Creation</h3>
+                <ul>
+                    <li>You must provide accurate and complete information</li>
+                    <li>You are responsible for maintaining account security</li>
+                    <li>You must not share your account credentials</li>
+                    <li>One account per person</li>
+                </ul>
+
+                <h3>4.2 Account Security</h3>
+                <ul>
+                    <li>You are responsible for all activity under your account</li>
+                    <li>Notify us immediately of unauthorized access</li>
+                    <li>We are not liable for losses due to unauthorized account use</li>
+                </ul>
+
+                <h3>4.3 Account Termination</h3>
+                <p>We may suspend or terminate your account if you:</p>
+                <ul>
+                    <li>Violate these Terms</li>
+                    <li>Provide false information</li>
+                    <li>Engage in fraudulent activity</li>
+                    <li>Abuse our services or staff</li>
+                </ul>
+                <p>You may delete your account at any time through the App settings.</p>
+            </div>
+
+            <!-- Orders and Payments -->
+            <div class="card">
+                <h2><i class="fas fa-shopping-cart icon"></i> 5. Orders and Payments</h2>
+                
+                <h3>5.1 Placing Orders</h3>
+                <ul>
+                    <li>All orders are subject to availability</li>
+                    <li>Prices are displayed in YER (Yemeni Rial)</li>
+                    <li>Prices may change without notice</li>
+                    <li>We reserve the right to refuse any order</li>
+                </ul>
+
+                <h3>5.2 Payment</h3>
+                <ul>
+                    <li>Payment is required at time of order</li>
+                    <li>We accept: Credit/Debit Cards, PayPal, Stripe, Cash on Delivery</li>
+                    <li>All payments are processed by third-party providers</li>
+                    <li>You agree to pay all charges incurred</li>
+                </ul>
+
+                <h3>5.3 Pricing and Taxes</h3>
+                <ul>
+                    <li>Prices include applicable taxes unless stated otherwise</li>
+                    <li>Delivery fees are displayed before order confirmation</li>
+                    <li>Promotional discounts are subject to terms and conditions</li>
+                </ul>
+
+                <h3>5.4 Order Cancellation</h3>
+                <ul>
+                    <li>Orders may be cancelled before preparation begins</li>
+                    <li>Refunds for cancelled orders will be processed within 3-5 business days</li>
+                    <li>We reserve the right to cancel orders due to unavailability</li>
+                </ul>
+
+                <h3>5.5 Refunds</h3>
+                <ul>
+                    <li>Refund eligibility is determined case by case</li>
+                    <li>Contact customer support for refund requests</li>
+                    <li>Refunds are processed to the original payment method</li>
+                </ul>
+            </div>
+
+            <!-- Delivery -->
+            <div class="card">
+                <h2><i class="fas fa-truck icon"></i> 6. Delivery</h2>
+                
+                <h3>6.1 Delivery Areas</h3>
+                <ul>
+                    <li>Delivery is available in designated service areas</li>
+                    <li>Service areas are displayed in the App</li>
+                </ul>
+
+                <h3>6.2 Delivery Times</h3>
+                <ul>
+                    <li>Estimated delivery times are provided but not guaranteed</li>
+                    <li>Delays may occur due to traffic, weather, or high demand</li>
+                    <li>We are not liable for delays beyond our control</li>
+                </ul>
+
+                <h3>6.3 Delivery Address</h3>
+                <ul>
+                    <li>You must provide accurate delivery information</li>
+                    <li>Additional charges may apply for incorrect addresses</li>
+                    <li>We are not responsible for failed deliveries due to incorrect information</li>
+                </ul>
+
+                <h3>6.4 Receipt of Delivery</h3>
+                <ul>
+                    <li>Orders must be received by you or an authorized person</li>
+                    <li>Proof of delivery may be required</li>
+                    <li>Unclaimed orders may be disposed of after 30 minutes</li>
+                </ul>
+            </div>
+
+            <!-- User Conduct -->
+            <div class="card">
+                <h2><i class="fas fa-exclamation-triangle icon"></i> 7. User Conduct</h2>
+                <p>You agree NOT to:</p>
+                <ul>
+                    <li>Use the App for illegal purposes</li>
+                    <li>Provide false or misleading information</li>
+                    <li>Interfere with App operation</li>
+                    <li>Attempt to gain unauthorized access</li>
+                    <li>Harass or abuse our staff or delivery personnel</li>
+                    <li>Use automated systems to access the App</li>
+                    <li>Resell products purchased through the App</li>
+                    <li>Violate intellectual property rights</li>
+                </ul>
+            </div>
+
+            <!-- Intellectual Property -->
+            <div class="card">
+                <h2><i class="fas fa-copyright icon"></i> 8. Intellectual Property</h2>
+                
+                <h3>8.1 Our Property</h3>
+                <p>The App and its contents, including but not limited to:</p>
+                <ul>
+                    <li>Software and code</li>
+                    <li>Design and graphics</li>
+                    <li>Logos and trademarks</li>
+                    <li>Text and images</li>
+                </ul>
+                <p>Are owned by Enova Studio and protected by intellectual property laws.</p>
+
+                <h3>8.2 Limited License</h3>
+                <p>We grant you a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes.</p>
+
+                <h3>8.3 Restrictions</h3>
+                <p>You may not:</p>
+                <ul>
+                    <li>Copy, modify, or distribute the App</li>
+                    <li>Reverse engineer the App</li>
+                    <li>Use the App for commercial purposes without permission</li>
+                    <li>Remove copyright or trademark notices</li>
+                </ul>
+            </div>
+
+            <!-- User Content -->
+            <div class="card">
+                <h2><i class="fas fa-edit icon"></i> 9. User Content</h2>
+                
+                <h3>9.1 Your Content</h3>
+                <p>You retain ownership of content you submit (reviews, photos, etc.).</p>
+
+                <h3>9.2 License to Us</h3>
+                <p>By submitting content, you grant us a non-exclusive, royalty-free license to use, display, and distribute your content in connection with our services.</p>
+
+                <h3>9.3 Content Standards</h3>
+                <p>Your content must not:</p>
+                <ul>
+                    <li>Be false, misleading, or defamatory</li>
+                    <li>Infringe on others' rights</li>
+                    <li>Contain illegal or offensive material</li>
+                    <li>Contain spam or advertising</li>
+                </ul>
+                <p>We may remove content that violates these standards.</p>
+            </div>
+
+            <!-- Disclaimers -->
+            <div class="card">
+                <h2><i class="fas fa-shield-alt icon"></i> 10. Disclaimers</h2>
+                
+                <h3>10.1 "As Is" Basis</h3>
+                <div class="warning-box">
+                    <p><strong>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED.</strong></p>
+                </div>
+
+                <h3>10.2 No Guarantee</h3>
+                <p>We do not guarantee:</p>
+                <ul>
+                    <li>Uninterrupted or error-free service</li>
+                    <li>Accuracy of information</li>
+                    <li>Results from using the App</li>
+                    <li>Compatibility with all devices</li>
+                </ul>
+
+                <h3>10.3 Third-Party Content</h3>
+                <p>We are not responsible for third-party content, products, or services accessed through the App.</p>
+            </div>
+
+            <!-- Limitation of Liability -->
+            <div class="card">
+                <h2><i class="fas fa-balance-scale icon"></i> 11. Limitation of Liability</h2>
+                
+                <h3>11.1 Exclusion of Damages</h3>
+                <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, ENOVA STUDIO SHALL NOT BE LIABLE FOR:</p>
+                <ul>
+                    <li>Indirect, incidental, or consequential damages</li>
+                    <li>Loss of profits, data, or business opportunities</li>
+                    <li>Personal injury (except where caused by our negligence)</li>
+                </ul>
+
+                <h3>11.2 Maximum Liability</h3>
+                <p>Our total liability shall not exceed the amount you paid to us in the 12 months preceding the claim.</p>
+
+                <h3>11.3 Exceptions</h3>
+                <p>Some jurisdictions do not allow limitation of liability. In such cases, our liability is limited to the fullest extent permitted by law.</p>
+            </div>
+
+            <!-- Indemnification -->
+            <div class="card">
+                <h2><i class="fas fa-user-shield icon"></i> 12. Indemnification</h2>
+                <p>You agree to indemnify and hold harmless Enova Studio, its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from:</p>
+                <ul>
+                    <li>Your use of the App</li>
+                    <li>Your violation of these Terms</li>
+                    <li>Your violation of any third-party rights</li>
+                </ul>
+            </div>
+
+            <!-- Dispute Resolution -->
+            <div class="card">
+                <h2><i class="fas fa-gavel icon"></i> 13. Dispute Resolution</h2>
+                
+                <h3>13.1 Governing Law</h3>
+                <p>These Terms are governed by the laws of Yemen.</p>
+
+                <h3>13.2 Dispute Resolution</h3>
+                <p>Any disputes shall be resolved through:</p>
+                <ol>
+                    <li><strong>Informal Resolution:</strong> Contact us first to resolve the issue</li>
+                    <li><strong>Mediation:</strong> If informal resolution fails</li>
+                    <li><strong>Arbitration/Courts:</strong> As a last resort, in courts of Yemen</li>
+                </ol>
+
+                <h3>13.3 Class Action Waiver</h3>
+                <p>You agree to resolve disputes individually and waive any right to participate in class actions.</p>
+            </div>
+
+            <!-- Changes to Terms -->
+            <div class="card">
+                <h2><i class="fas fa-sync-alt icon"></i> 14. Changes to Terms</h2>
+                <p>We may modify these Terms at any time. Changes are effective when posted. Continued use of the App after changes constitutes acceptance of modified Terms.</p>
+                <p>We will notify you of significant changes through:</p>
+                <ul>
+                    <li>In-app notifications</li>
+                    <li>Email (if provided)</li>
+                    <li>Updated "Last Updated" date</li>
+                </ul>
+            </div>
+
+            <!-- General Provisions -->
+            <div class="card">
+                <h2><i class="fas fa-list-alt icon"></i> 15. General Provisions</h2>
+                
+                <h3>15.1 Entire Agreement</h3>
+                <p>These Terms constitute the entire agreement between you and us regarding the App.</p>
+
+                <h3>15.2 Severability</h3>
+                <p>If any provision is found invalid, the remaining provisions remain in effect.</p>
+
+                <h3>15.3 Waiver</h3>
+                <p>Failure to enforce any right does not waive that right.</p>
+
+                <h3>15.4 Assignment</h3>
+                <p>You may not assign your rights under these Terms. We may assign our rights to any affiliate or successor.</p>
+
+                <h3>15.5 Force Majeure</h3>
+                <p>We are not liable for failures due to circumstances beyond our control (natural disasters, war, pandemic, etc.).</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="card contact-card">
+                <h2><i class="fas fa-envelope icon"></i> 16. Contact Information</h2>
+                <p>For questions about these Terms, contact us:</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope icon"></i>
+                        <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <span>Sana'a, Yemen</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acknowledgment -->
+            <div class="card">
+                <h2><i class="fas fa-check-circle icon"></i> 17. Acknowledgment</h2>
+                <div class="info-box">
+                    <p><strong>BY USING HARVEY (هارفي), YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE.</strong></p>
+                </div>
+                <p style="text-align: center; margin-top: 20px; font-style: italic;">These Terms of Service were last updated on December 31, 2025.</p>
+            </div>
+        </div>
+
+        <!-- Arabic Content -->
+        <div id="content-ar" class="content-section arabic-text">
+            <!-- الموافقة على الشروط -->
+            <div class="card">
+                <h2><i class="fas fa-handshake icon"></i> 1. الموافقة على الشروط</h2>
+                <p>باستخدام تطبيق هارفي (Harvey) للهاتف المحمول ("التطبيق")، فإنك توافق على الالتزام بشروط الخدمة هذه ("الشروط"). إذا كنت لا توافق على هذه الشروط، فلا تستخدم التطبيق.</p>
+                <p>تشكل هذه الشروط اتفاقية ملزمة قانونياً بينك وبين إينوفا ستوديو ("الشركة" أو "نحن" أو "لنا").</p>
+            </div>
+
+            <!-- وصف الخدمة -->
+            <div class="card">
+                <h2><i class="fas fa-info-circle icon"></i> 2. وصف الخدمة</h2>
+                <p>هارفي (Harvey) هو تطبيق للهاتف المحمول يوفر:</p>
+                <ul>
+                    <li>خدمات طلب الطعام والمنتجات</li>
+                    <li>خدمات التوصيل</li>
+                    <li>معالجة المدفوعات</li>
+                    <li>إدارة حساب المستخدم</li>
+                    <li>تتبع الطلبات</li>
+                </ul>
+                <p>يربط التطبيق المستخدمين بفروع المطاعم وخدمات التوصيل التي تديرها إينوفا ستوديو أو شركاؤها.</p>
+            </div>
+
+            <!-- الأهلية -->
+            <div class="card">
+                <h2><i class="fas fa-user-check icon"></i> 3. الأهلية</h2>
+                <p>لاستخدام تطبيقنا، يجب أن:</p>
+                <ul>
+                    <li>تكون في سن 18 عاماً على الأقل، أو</li>
+                    <li>تكون في سن 13 عاماً على الأقل مع موافقة الوالدين/الوصي</li>
+                    <li>تتمتع بالأهلية القانونية لإبرام اتفاقية ملزمة</li>
+                    <li>لا يكون محظوراً عليك استخدام التطبيق بموجب القوانين المعمول بها</li>
+                </ul>
+                <p>باستخدام التطبيق، فإنك تقر وتضمن أنك تستوفي متطلبات الأهلية هذه.</p>
+            </div>
+
+            <!-- حسابات المستخدمين -->
+            <div class="card">
+                <h2><i class="fas fa-user-circle icon"></i> 4. حسابات المستخدمين</h2>
+                
+                <h3>4.1 إنشاء الحساب</h3>
+                <ul>
+                    <li>يجب تقديم معلومات دقيقة وكاملة</li>
+                    <li>أنت مسؤول عن الحفاظ على أمان الحساب</li>
+                    <li>يجب عدم مشاركة بيانات اعتماد حسابك</li>
+                    <li>حساب واحد لكل شخص</li>
+                </ul>
+
+                <h3>4.2 أمان الحساب</h3>
+                <ul>
+                    <li>أنت مسؤول عن جميع الأنشطة ضمن حسابك</li>
+                    <li>أخطرنا فوراً بأي وصول غير مصرح به</li>
+                    <li>لسنا مسؤولين عن الخسائر الناجمة عن الاستخدام غير المصرح به للحساب</li>
+                </ul>
+
+                <h3>4.3 إنهاء الحساب</h3>
+                <p>قد نعلق أو ننهي حسابك إذا:</p>
+                <ul>
+                    <li>انتهكت هذه الشروط</li>
+                    <li>قدمت معلومات خاطئة</li>
+                    <li>شاركت في نشاط احتيالي</li>
+                    <li>أساءت لخدماتنا أو موظفينا</li>
+                </ul>
+                <p>يمكنك حذف حسابك في أي وقت من خلال إعدادات التطبيق.</p>
+            </div>
+
+            <!-- الطلبات والمدفوعات -->
+            <div class="card">
+                <h2><i class="fas fa-shopping-cart icon"></i> 5. الطلبات والمدفوعات</h2>
+                
+                <h3>5.1 تقديم الطلبات</h3>
+                <ul>
+                    <li>جميع الطلبات تخضع للتوفر</li>
+                    <li>الأسعار معروضة بالريال اليمني</li>
+                    <li>قد تتغير الأسعار دون إشعار</li>
+                    <li>نحتفظ بالحق في رفض أي طلب</li>
+                </ul>
+
+                <h3>5.2 الدفع</h3>
+                <ul>
+                    <li>الدفع مطلوب عند الطلب</li>
+                    <li>نقبل: بطاقات الائتمان/الخصم، PayPal، Stripe، الدفع عند الاستلام</li>
+                    <li>تتم معالجة جميع المدفوعات بواسطة مزودي خدمات خارجيين</li>
+                    <li>توافق على دفع جميع الرسوم المتكبدة</li>
+                </ul>
+
+                <h3>5.3 التسعير والضرائب</h3>
+                <ul>
+                    <li>تشمل الأسعار الضرائب المطبقة ما لم يذكر خلاف ذلك</li>
+                    <li>تُعرض رسوم التوصيل قبل تأكيد الطلب</li>
+                    <li>الخصومات الترويجية تخضع للشروط والأحكام</li>
+                </ul>
+
+                <h3>5.4 إلغاء الطلب</h3>
+                <ul>
+                    <li>يمكن إلغاء الطلبات قبل بدء التحضير</li>
+                    <li>سيتم معالجة المبالغ المستردة للطلبات الملغاة خلال 3-5 أيام عمل</li>
+                    <li>نحتفظ بالحق في إلغاء الطلبات بسبب عدم التوفر</li>
+                </ul>
+
+                <h3>5.5 الاسترداد</h3>
+                <ul>
+                    <li>يتم تحديد أهلية الاسترداد حسب كل حالة</li>
+                    <li>اتصل بدعم العملاء لطلبات الاسترداد</li>
+                    <li>تتم معالجة المبالغ المستردة إلى طريقة الدفع الأصلية</li>
+                </ul>
+            </div>
+
+            <!-- التوصيل -->
+            <div class="card">
+                <h2><i class="fas fa-truck icon"></i> 6. التوصيل</h2>
+                
+                <h3>6.1 مناطق التوصيل</h3>
+                <ul>
+                    <li>التوصيل متاح في مناطق الخدمة المحددة</li>
+                    <li>تُعرض مناطق الخدمة في التطبيق</li>
+                </ul>
+
+                <h3>6.2 أوقات التوصيل</h3>
+                <ul>
+                    <li>أوقات التوصيل المقدرة مقدمة ولكنها غير مضمونة</li>
+                    <li>قد تحدث تأخيرات بسبب حركة المرور أو الطقس أو الطلب المرتفع</li>
+                    <li>لسنا مسؤولين عن التأخيرات الخارجة عن سيطرتنا</li>
+                </ul>
+
+                <h3>6.3 عنوان التوصيل</h3>
+                <ul>
+                    <li>يجب تقديم معلومات توصيل دقيقة</li>
+                    <li>قد تُطبق رسوم إضافية للعناوين غير الصحيحة</li>
+                    <li>لسنا مسؤولين عن فشل التوصيل بسبب معلومات غير صحيحة</li>
+                </ul>
+
+                <h3>6.4 استلام التوصيل</h3>
+                <ul>
+                    <li>يجب استلام الطلبات من قبلك أو شخص مخول</li>
+                    <li>قد يُطلب إثبات التسليم</li>
+                    <li>قد يتم التخلص من الطلبات غير المستلمة بعد 30 دقيقة</li>
+                </ul>
+            </div>
+
+            <!-- سلوك المستخدم -->
+            <div class="card">
+                <h2><i class="fas fa-exclamation-triangle icon"></i> 7. سلوك المستخدم</h2>
+                <p>توافق على عدم:</p>
+                <ul>
+                    <li>استخدام التطبيق لأغراض غير قانونية</li>
+                    <li>تقديم معلومات خاطئة أو مضللة</li>
+                    <li>التدخل في تشغيل التطبيق</li>
+                    <li>محاولة الوصول غير المصرح به</li>
+                    <li>إزعاج أو إساءة موظفينا أو موظفي التوصيل</li>
+                    <li>استخدام أنظمة آلية للوصول إلى التطبيق</li>
+                    <li>إعادة بيع المنتجات المشتراة من خلال التطبيق</li>
+                    <li>انتهاك حقوق الملكية الفكرية</li>
+                </ul>
+            </div>
+
+            <!-- الملكية الفكرية -->
+            <div class="card">
+                <h2><i class="fas fa-copyright icon"></i> 8. الملكية الفكرية</h2>
+                
+                <h3>8.1 ملكيتنا</h3>
+                <p>التطبيق ومحتوياته، بما في ذلك ولكن لا يقتصر على:</p>
+                <ul>
+                    <li>البرمجيات والكود</li>
+                    <li>التصميم والرسومات</li>
+                    <li>الشعارات والعلامات التجارية</li>
+                    <li>النصوص والصور</li>
+                </ul>
+                <p>مملوكة لإينوفا ستوديو ومحمية بقوانين الملكية الفكرية.</p>
+
+                <h3>8.2 ترخيص محدود</h3>
+                <p>نمنحك ترخيصاً محدوداً وغير حصري وغير قابل للتحويل لاستخدام التطبيق لأغراض شخصية وغير تجارية.</p>
+
+                <h3>8.3 القيود</h3>
+                <p>لا يجوز لك:</p>
+                <ul>
+                    <li>نسخ أو تعديل أو توزيع التطبيق</li>
+                    <li>إجراء هندسة عكسية للتطبيق</li>
+                    <li>استخدام التطبيق لأغراض تجارية دون إذن</li>
+                    <li>إزالة إشعارات حقوق النشر أو العلامات التجارية</li>
+                </ul>
+            </div>
+
+            <!-- محتوى المستخدم -->
+            <div class="card">
+                <h2><i class="fas fa-edit icon"></i> 9. محتوى المستخدم</h2>
+                
+                <h3>9.1 محتواك</h3>
+                <p>تحتفظ بملكية المحتوى الذي تقدمه (المراجعات، الصور، إلخ).</p>
+
+                <h3>9.2 الترخيص لنا</h3>
+                <p>بتقديم المحتوى، تمنحنا ترخيصاً غير حصري وخالٍ من حقوق الملكية لاستخدام وعرض وتوزيع محتواك فيما يتعلق بخدماتنا.</p>
+
+                <h3>9.3 معايير المحتوى</h3>
+                <p>يجب ألا يكون محتواك:</p>
+                <ul>
+                    <li>خاطئاً أو مضللاً أو تشهيرياً</li>
+                    <li>ينتهك حقوق الآخرين</li>
+                    <li>يحتوي على مواد غير قانونية أو مسيئة</li>
+                    <li>يحتوي على رسائل غير مرغوب فيها أو إعلانات</li>
+                </ul>
+                <p>قد نزيل المحتوى الذي ينتهك هذه المعايير.</p>
+            </div>
+
+            <!-- إخلاء المسؤولية -->
+            <div class="card">
+                <h2><i class="fas fa-shield-alt icon"></i> 10. إخلاء المسؤولية</h2>
+                
+                <h3>10.1 أساس "كما هو"</h3>
+                <div class="warning-box">
+                    <p><strong>يُقدم التطبيق "كما هو" و"حسب التوفر" دون ضمانات من أي نوع، صريحة أو ضمنية.</strong></p>
+                </div>
+
+                <h3>10.2 لا ضمان</h3>
+                <p>لا نضمن:</p>
+                <ul>
+                    <li>خدمة متواصلة أو خالية من الأخطاء</li>
+                    <li>دقة المعلومات</li>
+                    <li>النتائج من استخدام التطبيق</li>
+                    <li>التوافق مع جميع الأجهزة</li>
+                </ul>
+
+                <h3>10.3 محتوى الطرف الثالث</h3>
+                <p>لسنا مسؤولين عن محتوى أو منتجات أو خدمات الطرف الثالث التي يتم الوصول إليها من خلال التطبيق.</p>
+            </div>
+
+            <!-- حدود المسؤولية -->
+            <div class="card">
+                <h2><i class="fas fa-balance-scale icon"></i> 11. حدود المسؤولية</h2>
+                
+                <h3>11.1 استبعاد الأضرار</h3>
+                <p>إلى أقصى حد يسمح به القانون، لن تكون إينوفا ستوديو مسؤولة عن:</p>
+                <ul>
+                    <li>الأضرار غير المباشرة أو العرضية أو التبعية</li>
+                    <li>فقدان الأرباح أو البيانات أو فرص العمل</li>
+                    <li>الإصابة الشخصية (باستثناء ما تسببه إهمالنا)</li>
+                </ul>
+
+                <h3>11.2 الحد الأقصى للمسؤولية</h3>
+                <p>لن يتجاوز إجمالي مسؤوليتنا المبلغ الذي دفعته لنا في الـ 12 شهراً السابقة للمطالبة.</p>
+
+                <h3>11.3 الاستثناءات</h3>
+                <p>بعض الولايات القضائية لا تسمح بتحديد المسؤولية. في مثل هذه الحالات، تكون مسؤوليتنا محدودة إلى أقصى حد يسمح به القانون.</p>
+            </div>
+
+            <!-- التعويض -->
+            <div class="card">
+                <h2><i class="fas fa-user-shield icon"></i> 12. التعويض</h2>
+                <p>توافق على تعويض وإبراء ذمة إينوفا ستوديو ومسؤوليها ومديريها وموظفيها ووكلائها من أي مطالبات أو أضرار أو خسائر أو نفقات ناشئة عن:</p>
+                <ul>
+                    <li>استخدامك للتطبيق</li>
+                    <li>انتهاكك لهذه الشروط</li>
+                    <li>انتهاكك لأي حقوق طرف ثالث</li>
+                </ul>
+            </div>
+
+            <!-- حل النزاعات -->
+            <div class="card">
+                <h2><i class="fas fa-gavel icon"></i> 13. حل النزاعات</h2>
+                
+                <h3>13.1 القانون الحاكم</h3>
+                <p>تخضع هذه الشروط لقوانين اليمن.</p>
+
+                <h3>13.2 حل النزاعات</h3>
+                <p>سيتم حل أي نزاعات من خلال:</p>
+                <ol>
+                    <li><strong>الحل غير الرسمي:</strong> اتصل بنا أولاً لحل المشكلة</li>
+                    <li><strong>الوساطة:</strong> إذا فشل الحل غير الرسمي</li>
+                    <li><strong>التحكيم/المحاكم:</strong> كملاذ أخير، في محاكم اليمن</li>
+                </ol>
+
+                <h3>13.3 التنازل عن الدعاوى الجماعية</h3>
+                <p>توافق على حل النزاعات بشكل فردي وتتنازل عن أي حق للمشاركة في الدعاوى الجماعية.</p>
+            </div>
+
+            <!-- التغييرات في الشروط -->
+            <div class="card">
+                <h2><i class="fas fa-sync-alt icon"></i> 14. التغييرات في الشروط</h2>
+                <p>قد نعدل هذه الشروط في أي وقت. تصبح التغييرات سارية عند نشرها. يشكل استمرار استخدام التطبيق بعد التغييرات قبولاً للشروط المعدلة.</p>
+                <p>سنخطرك بالتغييرات الهامة من خلال:</p>
+                <ul>
+                    <li>إشعارات داخل التطبيق</li>
+                    <li>البريد الإلكتروني (إذا تم تقديمه)</li>
+                    <li>تحديث تاريخ "آخر تحديث"</li>
+                </ul>
+            </div>
+
+            <!-- أحكام عامة -->
+            <div class="card">
+                <h2><i class="fas fa-list-alt icon"></i> 15. أحكام عامة</h2>
+                
+                <h3>15.1 الاتفاقية الكاملة</h3>
+                <p>تشكل هذه الشروط الاتفاقية الكاملة بينك وبيننا فيما يتعلق بالتطبيق.</p>
+
+                <h3>15.2 قابلية الفصل</h3>
+                <p>إذا وُجد أي حكم غير صالح، تبقى الأحكام المتبقية سارية المفعول.</p>
+
+                <h3>15.3 التنازل</h3>
+                <p>عدم إنفاذ أي حق لا يعني التنازل عن ذلك الحق.</p>
+
+                <h3>15.4 التنازل</h3>
+                <p>لا يجوز لك التنازل عن حقوقك بموجب هذه الشروط. يجوز لنا التنازل عن حقوقنا لأي شركة تابعة أو خلف.</p>
+
+                <h3>15.5 القوة القاهرة</h3>
+                <p>لسنا مسؤولين عن الإخفاقات بسبب ظروف خارجة عن سيطرتنا (الكوارث الطبيعية، الحرب، الوباء، إلخ).</p>
+            </div>
+
+            <!-- معلومات الاتصال -->
+            <div class="card contact-card">
+                <h2><i class="fas fa-envelope icon"></i> 16. معلومات الاتصال</h2>
+                <p>للأسئلة حول هذه الشروط، تواصل معنا:</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope icon"></i>
+                        <a href="mailto:support@enovastudio-ye.com">support@enovastudio-ye.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <span>صنعاء، اليمن</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الإقرار -->
+            <div class="card">
+                <h2><i class="fas fa-check-circle icon"></i> 17. الإقرار</h2>
+                <div class="info-box">
+                    <p><strong>باستخدام تطبيق هارفي (HARVEY)، فإنك تقر بأنك قرأت وفهمت ووافقت على الالتزام بشروط الخدمة هذه.</strong></p>
+                </div>
+                <p style="text-align: center; margin-top: 20px; font-style: italic;">تم آخر تحديث لشروط الخدمة هذه في 31 ديسمبر 2025.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 <span class="company-name">Enova Studio</span>. All rights reserved.</p>
+        <p style="margin-top: 10px;">Harvey (هارفي) - Food Delivery App</p>
+        <p style="margin-top: 15px;">
+            <a href="privacy-policy.html" style="color: #9E9E9E;">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            // Update tabs
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Update content
+            document.querySelectorAll('.content-section').forEach(section => section.classList.remove('active'));
+            document.getElementById('content-' + lang).classList.add('active');
+            
+            // Update header for RTL
+            if (lang === 'ar') {
+                document.querySelector('.header h1').textContent = 'شروط الخدمة';
+                document.querySelector('.header p').textContent = 'هارفي (Harvey) - تطبيق توصيل الطعام';
+                document.querySelector('.last-updated').textContent = 'آخر تحديث: 31 ديسمبر 2025';
+            } else {
+                document.querySelector('.header h1').textContent = 'Terms of Service';
+                document.querySelector('.header p').textContent = 'Harvey (هارفي) - Food Delivery App';
+                document.querySelector('.last-updated').textContent = 'Last Updated: December 31, 2025';
+            }
+        }
+    </script>
+</body>
+</html>
